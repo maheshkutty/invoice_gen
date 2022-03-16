@@ -1,0 +1,42 @@
+POST http://localhost:5000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "invoice_no": 12345,
+    "date": "30 Mar",
+    "due_date": "30 Apr",
+    "name": "Mahesh Kutty",
+    "address": "123 Quiet Lane",
+    "subtotal": 335,
+    "tax": 10,
+    "total": 345,
+    "amt_paid": 100,
+    "amt_due": 245,
+    "pemail":"maheshkutty17@gmail.com",
+    "row_contents": [
+        {
+            "description": "Laptop",
+            "quantity": 30,
+            "rate": 5,
+            "amount": 150
+        }, {
+            "description": "All Purpose Flour",
+            "quantity": 10,
+            "rate": 15,
+            "amount": 150
+        }, {
+            "description": "Eggs",
+            "quantity": 5,
+            "rate": 7,
+            "amount": 35
+        }
+    ]
+}
+###
+
+POST http://localhost:5000/demo HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Mahesh"
+}
